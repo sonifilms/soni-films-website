@@ -979,10 +979,7 @@ function ContactSection() {
   },
   body: body.toString(),
 })
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: body.toString(),
-      })
+       
       if (res.ok) {
         setStatus('success')
         setFormData({ name: '', phone: '', email: '', project: '', message: '' })
