@@ -972,7 +972,13 @@ function ContactSection() {
         'form-name': 'contact',
         ...formData,
       })
-      const res = await fetch('/__forms.html', {
+      const res = await fetch('/', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded',
+  },
+  body: body.toString(),
+})
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
