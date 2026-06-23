@@ -1278,7 +1278,32 @@ function Footer() {
 // ─────────────────────────────────────────────
 function SoniFilmsHome() {
   return (
-    <div style={{ background: '#0a0a0a', minHeight: '100vh' }}>
+    <div style={{ background: '#0a0a0a', minHeight: '100vh' }}> <Footer />
+
+<a
+  href="https://wa.me/919871359419"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    background: '#25D366',
+    color: '#fff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '28px',
+    textDecoration: 'none',
+    zIndex: 9999,
+    boxShadow: '0 4px 12px rgba(0,0,0,0.4)'
+  }}
+>
+  💬
+</a>
       <Navbar />
       <HeroSection />
       <MarqueeStrip />
